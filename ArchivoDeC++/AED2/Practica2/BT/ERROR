@@ -1,0 +1,2 @@
+a.out: malloc.c:3720: _int_malloc: Assertion `(unsigned long) (size) >= (unsigned long) (nb)' failed.
+
