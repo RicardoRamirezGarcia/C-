@@ -1,0 +1,96 @@
+IDENTIFICACION DE FRUTAS
+Atributo objetivo: Fruta
+hecho: Diametro = 8
+hecho: Forma = Redonda
+hecho: NSemillas = 10
+hecho: Color = Verde
+Proceso de razonamiento seguido por el SBR
+<<<<<<<<<<ITERACION: 1>>>>>>>>>>
+CONTENIDO CONJUNTO CONFLICTO
+ID REGLAS EN CONJUNTO CONFLICTO
+REGLA PRIORITARIA
+   R1 con un valor de prioridad: 0
+ANTECEDENTES:
+antecedente: NSemillas > 1
+      Hecho de la BH que confirma el antecedente:
+      hecho: NSemillas = 10
+      El hecho es un dato de entrada
+COCSECUENTE: TipoSemilla = 0
+HECHO INFERIDO: 
+hecho: TipoSemilla = Multiple
+CONTENIDO BH ACTUALIZADA
+hecho: Diametro = 8
+hecho: Forma = Redonda
+hecho: NSemillas = 10
+hecho: Color = Verde
+hecho: TipoSemilla = Multiple
+<<<<<<<<<<ITERACION: 2>>>>>>>>>>
+CONTENIDO CONJUNTO CONFLICTO
+ID REGLAS EN CONJUNTO CONFLICTO
+REGLA PRIORITARIA
+   R1 con un valor de prioridad: 0
+ANTECEDENTES:
+antecedente: NSemillas > 1
+      Hecho de la BH que confirma el antecedente:
+      hecho: NSemillas = 10
+      El hecho es un dato de entrada
+COCSECUENTE: TipoSemilla = 0
+HECHO INFERIDO: 
+hecho: TipoSemilla = Multiple
+CONTENIDO BH ACTUALIZADA
+hecho: Diametro = 8
+hecho: Forma = Redonda
+hecho: NSemillas = 10
+hecho: Color = Verde
+hecho: TipoSemilla = Multiple
+hecho: TipoSemilla = Multiple
+<<<<<<<<<<ITERACION: 3>>>>>>>>>>
+CONTENIDO CONJUNTO CONFLICTO
+ID REGLAS EN CONJUNTO CONFLICTO
+REGLA PRIORITARIA
+   R5 con un valor de prioridad: 0
+ANTECEDENTES:
+antecedente: Forma = Redonda
+      Hecho de la BH que confirma el antecedente:
+      hecho: Forma = Redonda
+      El hecho es un dato de entrada
+antecedente: Diametro < 10
+      Hecho de la BH que confirma el antecedente:
+COCSECUENTE: ClaseFrutal = 0
+HECHO INFERIDO: 
+hecho: ClaseFrutal = Arbol
+CONTENIDO BH ACTUALIZADA
+hecho: Diametro = 8
+hecho: Forma = Redonda
+hecho: NSemillas = 10
+hecho: Color = Verde
+hecho: TipoSemilla = Multiple
+hecho: TipoSemilla = Multiple
+hecho: ClaseFrutal = Arbol
+<<<<<<<<<<ITERACION: 4>>>>>>>>>>
+CONTENIDO CONJUNTO CONFLICTO
+ID REGLAS EN CONJUNTO CONFLICTO
+REGLA PRIORITARIA
+   R16 con un valor de prioridad: 10
+ANTECEDENTES:
+antecedente: ClaseFrutal = Arbol
+      Hecho de la BH que confirma el antecedente:
+      hecho: ClaseFrutal = Arbol
+      El hecho ha sido inferido por una regla
+antecedente: Color = Verde
+      Hecho de la BH que confirma el antecedente:
+antecedente: TipoSemilla = Multiple
+      Hecho de la BH que confirma el antecedente:
+COCSECUENTE: Fruta = Manzana
+HECHO INFERIDO: 
+hecho: Fruta = Manzana
+CONTENIDO BH ACTUALIZADA
+hecho: Diametro = 8
+hecho: Forma = Redonda
+hecho: NSemillas = 10
+hecho: Color = Verde
+hecho: TipoSemilla = Multiple
+hecho: TipoSemilla = Multiple
+hecho: ClaseFrutal = Arbol
+hecho: Fruta = Manzana
+Se ha alcanzado el objetivo Fruta

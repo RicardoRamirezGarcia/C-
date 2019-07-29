@@ -1,0 +1,5 @@
+4
+Precipitaciones = Fuertes
+Profundidad = 3
+Cambio = Subiendo
+Prediccion = Tormenta

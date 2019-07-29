@@ -1,0 +1,80 @@
+IDENTIFICACION DE FRUTAS
+Atributo objetivo: Fruta
+hecho: ClaseFrutal = Arbol
+hecho: Color = Naranja
+hecho: Forma = Redonda
+hecho: NSemillas = 1
+hecho: Diametro = 6
+Proceso de razonamiento seguido por el SBR
+<<<<<<<<<<ITERACION: 1>>>>>>>>>>
+CONTENIDO CONJUNTO CONFLICTO
+ID REGLAS EN CONJUNTO CONFLICTO
+REGLA PRIORITARIA
+   R5 con un valor de prioridad: 0
+ANTECEDENTES:
+antecedente: Forma = Redonda
+      Hecho de la BH que confirma el antecedente:
+      hecho: Forma = Redonda
+      El hecho es un dato de entrada
+antecedente: Diametro < 10
+      Hecho de la BH que confirma el antecedente:
+COCSECUENTE: ClaseFrutal = 0
+HECHO INFERIDO: 
+hecho: ClaseFrutal = Arbol
+CONTENIDO BH ACTUALIZADA
+hecho: ClaseFrutal = Arbol
+hecho: Color = Naranja
+hecho: Forma = Redonda
+hecho: NSemillas = 1
+hecho: Diametro = 6
+hecho: ClaseFrutal = Arbol
+<<<<<<<<<<ITERACION: 2>>>>>>>>>>
+CONTENIDO CONJUNTO CONFLICTO
+ID REGLAS EN CONJUNTO CONFLICTO
+REGLA PRIORITARIA
+   R6 con un valor de prioridad: 0
+ANTECEDENTES:
+antecedente: NSemillas = 1
+      Hecho de la BH que confirma el antecedente:
+      hecho: NSemillas = 1
+      El hecho es un dato de entrada
+COCSECUENTE: TipoSemilla = 0
+HECHO INFERIDO: 
+hecho: TipoSemilla = Hueso
+CONTENIDO BH ACTUALIZADA
+hecho: ClaseFrutal = Arbol
+hecho: Color = Naranja
+hecho: Forma = Redonda
+hecho: NSemillas = 1
+hecho: Diametro = 6
+hecho: ClaseFrutal = Arbol
+hecho: TipoSemilla = Hueso
+<<<<<<<<<<ITERACION: 3>>>>>>>>>>
+CONTENIDO CONJUNTO CONFLICTO
+ID REGLAS EN CONJUNTO CONFLICTO
+REGLA PRIORITARIA
+   R11 con un valor de prioridad: 10
+ANTECEDENTES:
+antecedente: ClaseFrutal = Arbol
+      Hecho de la BH que confirma el antecedente:
+      hecho: ClaseFrutal = Arbol
+      El hecho es un dato de entrada
+      hecho: ClaseFrutal = Arbol
+      El hecho ha sido inferido por una regla
+antecedente: Color = Naranja
+      Hecho de la BH que confirma el antecedente:
+antecedente: TipoSemilla = Hueso
+      Hecho de la BH que confirma el antecedente:
+COCSECUENTE: Fruta = Albaricoque
+HECHO INFERIDO: 
+hecho: Fruta = Albaricoque
+CONTENIDO BH ACTUALIZADA
+hecho: ClaseFrutal = Arbol
+hecho: Color = Naranja
+hecho: Forma = Redonda
+hecho: NSemillas = 1
+hecho: Diametro = 6
+hecho: ClaseFrutal = Arbol
+hecho: TipoSemilla = Hueso
+hecho: Fruta = Albaricoque
+Se ha alcanzado el objetivo Fruta
